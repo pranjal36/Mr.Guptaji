@@ -1,5 +1,5 @@
 <?php
-
+    if(isset($_POST['sendmail'])){
     $name = $_POST['name'];
     $visitor_email = $_POST['email'];
     $subject = $_POST['subject'];
@@ -19,5 +19,10 @@
     mail($to,$subject,$email_body,$headers);
 
     header("Location: index.html");
+
+    echo '<script>alert("Thank you for contacting me :)")</script>';
+    echo '<script>window.location.href="index.html";</script>';
+
+    }
 
 ?>
