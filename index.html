@@ -172,7 +172,40 @@
 					  </div>
 
 					  <div id="page-2" class= "page two">
-					  	<h2 class="heading">Experience</h2>
+						  <h2 class="heading">Experience</h2>
+						  <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Sept 2020-Present</span>
+		    					<h2>Core Member</h2>
+		    					<span class="position">Developer Student Club</span>
+		    					<p>Developer Student Clubs are university based community groups for students interested in Google developer technologies. Here students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
+		    				</div>
+	    				</div>
+						  <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Sept 2020-Present</span>
+		    					<h2>Technical Co - Head</h2>
+		    					<span class="position">Association for Computing Machinery</span>
+		    					<p>Association for Computing Machinery Student Chapters provide unique opportunities for networking, mentoring, Organising Events, Contests, Hackathons and bonding over common interests. They provide support both within the student community and to local communities outside the institution. </p>
+		    				</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Sept 2020-Present</span>
+		    					<h2>Web Developer & Mentor</h2>
+		    					<span class="position">Sanscript India</span>
+		    					<p>Sanscript is a organization of Programmers from India, the goal is to help Universities and Colleges Students to grow and contribute to open source community. Interned as a Full Stack Web Developer. Developed the main website for the organization and Mentored students throughout the journey.</p>
+		    				</div>
+	    				</div>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
 					    		<span class="flaticon-ideas"></span>
@@ -182,17 +215,6 @@
 		    					<h2>Web Developer</h2>
 		    					<span class="position">The Sparks Foundation</span>
 		    					<p>Motive of this foundation is to inspire students, help them innovate and let them integrate to build the next generation humankind. To teach new ways of thinking, to innovate and solve the problems on their own. Interned as a Full Stack Web Developer in the Foundation completed a Fully Dynamic website.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Sept 2020-Present</span>
-		    					<h2>Web Developer & Mentor</h2>
-		    					<span class="position">Sanscript India</span>
-		    					<p>Sanscript is a organization of Programmers from India, the goal is to help Universities and Colleges Students to grow and contribute to open source community. Interned as a Full Stack Web Developer. Developed the main website for the organization and Mentored students throughout the journey.</p>
 		    				</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -620,18 +642,18 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form class="bg-light p-4 p-md-5 contact-form" method="POST" action="php/contact.php">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input name="subject" type="text" class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
